@@ -12,10 +12,11 @@ intents.members = True
 intents.message_content = True
 
 bot = discord.Client(intents=intents)
+load_dotenv()
 
 IMAGE_URL = "https://imageproxy.ifunny.co/resize:640x,quality:90x75/images/1e60fcae0eccf9b3ae1bce0a337127d1b5e3bfcff419978664dbb2dfb349154c_3.jpg"
-CHANNEL_ID = 1036348210140156024 # Change to your own channel 
 RESULTADOS_TSE = "https://resultados.tse.jus.br/oficial/app/index.html#/eleicao/resultados"
+CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
 
 @bot.event
 async def on_ready():
@@ -42,7 +43,6 @@ async def status():
     await channel.send(embed=embed)
 
 try:
-    load_dotenv()
     bot.run(os.getenv("TOKEN"))
 
 except:
