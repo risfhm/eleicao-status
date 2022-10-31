@@ -14,7 +14,7 @@ intents.message_content = True
 bot = discord.Client(intents=intents)
 
 IMAGE_URL = "https://imageproxy.ifunny.co/resize:640x,quality:90x75/images/1e60fcae0eccf9b3ae1bce0a337127d1b5e3bfcff419978664dbb2dfb349154c_3.jpg"
-CHANNEL_ID = 1036348210140156024 ##eleição-status
+CHANNEL_ID = 1036348210140156024 # Change to your own channel 
 RESULTADOS_TSE = "https://resultados.tse.jus.br/oficial/app/index.html#/eleicao/resultados"
 
 @bot.event
@@ -29,7 +29,7 @@ async def status():
         title = "Eleições 2022",
         description = f"Seções apuradas: {get_sessions()}%",
         url = RESULTADOS_TSE,
-        color = 0x00B2EE
+        color = 0x00B2EE # Light Blue
     )
 
     today = datetime.datetime.now()
