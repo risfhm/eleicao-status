@@ -16,7 +16,8 @@ You will need to create a dotenv file to arm your token, so do so:
 
 ```shell
 $ touch .env
-$ echo "TOKEN=Your_Token" > .env
+$ echo "TOKEN=Your_Token" >> .env
+$ echo "CHANNEL_ID=Your_Channel_ID" >> .env
 ```
 
 ## Usage
