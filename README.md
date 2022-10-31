@@ -26,4 +26,12 @@ $ cd src
 $ python3 main.py
 ```
 
+## Links
+
+- **[Here's how to create a bot and get your token](https://discordpy.readthedocs.io/en/stable/discord.html)**
+- **[See how to enable Privileged Gateway Intents](https://discordpy.readthedocs.io/en/stable/intents.html)**
+
+---
+
 > NOTE: Make sure that you have a file named .env that has your valid Token before running the bot. The file can be in the directory before src.
+
