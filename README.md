@@ -35,3 +35,5 @@ $ python3 main.py
 
 > NOTE: Make sure that you have a file named .env that has your valid Token before running the bot. The file can be in the directory before src.
 
+> You must also change the CHANNEL_ID for the bot to work properly
+
